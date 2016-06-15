@@ -1,0 +1,259 @@
+<!--
+   _____       __    ___                   ______          __     ___
+  / ___/__  __/ /_  / (_)___ ___  ___     /_  __/__  _  __/ /_   |__ \
+  \__ \/ / / / __ \/ / / __ `__ \/ _ \     / / / _ \| |/_/ __/   __/ /
+ ___/ / /_/ / /_/ / / / / / / / /  __/    / / /  __/>  </ /_    / __/
+/____/\__,_/_.___/_/_/_/ /_/ /_/\___/    /_/  \___/_/|_|\__/   /____/
+ -->
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>编辑</title>
+
+    <!-- Facebook Insights -->
+    <meta property="fb:admins" content="100003742510626" />
+
+    <!-- Combine multiple fonts into one request -->
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic|Patua+One|Yanone+Kaffeesatz" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <link href="stylesheets/all.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="javascripts/all.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-16561083-20']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </head>
+
+  <body class="edit edit_index">
+    <header class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <hgroup>
+            <a href="index.html" class="brand"><h1>Sublime Text 手册</h1></a>
+          </hgroup>
+          <!-- end hgroup -->
+        </div><!-- end .container -->
+      </div><!-- end .navbar-innder -->
+    </header>
+    <!-- end header -->
+
+    <div class="container" id="main">
+      <div class="row">
+        <div class="span4"><nav><ul>
+<li><a href="preface">前言</a>
+
+<ul>
+<li><a href="preface#about-guides">关于这本手册</a>
+
+<ul>
+<li><a href="preface#what-is-sublime-text">什么是 Sublime Text？</a></li>
+<li><a href="preface#conventions-in-this-guide">这本手册的惯例</a></li>
+</ul></li>
+<li><a href="preface#what-this-guides-teach">这本手册会教你什么</a></li>
+</ul></li>
+<li><a href="installation">安装</a>
+
+<ul>
+<li><a href="installation#bits-or-64-bits">32 位元或 64 位元？</a>
+
+<ul>
+<li><a href="installation#windows">Windows</a></li>
+<li><a href="installation#osx">OS X</a></li>
+<li><a href="installation#linux">Linux</a></li>
+</ul></li>
+<li><a href="installation#for-developers">开发者版本</a></li>
+</ul></li>
+<li><a href="basic-concepts">基本概观</a>
+
+<ul>
+<li><a href="basic-concepts#directories">目录结构</a>
+
+<ul>
+<li><a href="basic-concepts#data-directory">Data 目录</a></li>
+<li><a href="basic-concepts#package-directory">Packages 目录</a>
+
+<ul>
+<li><a href="basic-concepts#user-package">User package</a></li>
+<li><a href="basic-concepts#default-package">Default package</a></li>
+</ul></li>
+</ul></li>
+<li><a href="basic-concepts#python-console-and-python-api">Python 控制台与 Python API</a></li>
+<li><a href="basic-concepts#textmate-compatibility">TextMate 相容</a></li>
+<li><a href="basic-concepts#vi-emulation">Vi 模拟模式</a></li>
+</ul></li>
+<li><a href="file-management-and-command-palette">档案导览与指令面板</a>
+
+<ul>
+<li><a href="file-management-and-command-palette#goto-anything">传送门？（Goto Anthing）</a></li>
+<li><a href="file-management-and-command-palette#sidebar">侧边栏</a></li>
+<li><a href="file-management-and-command-palette#command-palette">指令面板（Command Palette）</a></li>
+<li><a href="file-management-and-command-palette#projects">項目（Project）</a></li>
+</ul></li>
+<li><a href="edit">编辑</a>
+
+<ul>
+<li><a href="edit#multiple-selections">多重选取</a></li>
+<li><a href="edit#join-lines">合并多行</a></li>
+<li><a href="edit#swap-case">转换大小写</a></li>
+<li><a href="edit#ruler">尺规</a></li>
+<li><a href="edit#comment">注解</a></li>
+<li>程式码折叠</li>
+<li>标记</li>
+<li>更多用法</li>
+</ul></li>
+<li><a href="find">搜寻</a>
+
+<ul>
+<li><a href="find#search-single-file">搜寻单一档案的内容</a>
+
+<ul>
+<li><a href="find#search-and-replace">搜寻替换</a></li>
+<li><a href="find#incremental-search">累加搜寻（Incremental Search）</a></li>
+</ul></li>
+<li><a href="find#search-multiple-files">搜寻項目内全部档案的内容</a>
+
+<ul>
+<li><a href="find#search-scope">搜寻范围</a></li>
+</ul></li>
+<li><a href="find#regex">正规表示式（Regular Expressions）</a></li>
+</ul></li>
+<li><a href="customization">客制化</a>
+
+<ul>
+<li><a href="customization#snippets">程式码片段（Snippets）</a></li>
+<li><a href="customization#macros">巨集（Macros）</a></li>
+<li><a href="customization#commands">指令（Commands）</a></li>
+<li><a href="customization#completions">自动补全</a></li>
+<li><a href="customization#settings">偏好设定（Settings）</a>
+
+<ul>
+<li><a href="customization#how-to-change-settings">如何修改偏好设定</a></li>
+<li><a href="customization#settings-type">设定档的区别</a></li>
+<li><a href="customization#order-of-precedence-of-sublime-settings-files">合并设定档的优先排序</a></li>
+<li><a href="customization#filetype-settings">档案类型的设定</a></li>
+</ul></li>
+<li><a href="customization#key-bindings">快捷键组合设定（Key Bindings）</a>
+
+<ul>
+<li><a href="customization#file-format">设定快捷键的语法格式</a></li>
+</ul></li>
+<li><a href="customization#plugin-settings-and-key-bindings">外挂的偏好设定与快捷键</a></li>
+</ul></li>
+<li><a href="package-and-plugin">Package 和 Plugin</a>
+
+<ul>
+<li><a href="package-and-plugin#package-control">Package Control</a></li>
+<li><a href="package-and-plugin#install-package-control">安装 Package Control</a>
+
+<ul>
+<li><a href="package-and-plugin#install-package">安装 Package</a></li>
+<li><a href="package-and-plugin#remove-package">移除 Package</a></li>
+</ul></li>
+</ul></li>
+<li><a href="others">其他</a>
+
+<ul>
+<li><a href="others#build-system">Build System</a></li>
+<li><a href="others#command-line">命令行工具（Command Line）</a></li>
+</ul></li>
+</ul>
+</nav></div>
+        <div class="span8">
+          <article>
+            <header>
+              <h1>编辑</h1>
+            </header>
+            <div class="entry">
+              <h2 id="toc_0"><span id="multiple-selections">多重选取</span></h2>
+
+<p>通常每个文字编辑器都会有个搜寻（find）、替换（replace）的功能，用来一次更换档案里重复的文字，包括 Sublime Text 2 也有，但是在某些情况多重选取功能可以更有效率地修改文字。</p>
+
+<p>使用快捷键 <kbd>Command</kbd> + <kbd>D</kbd> 选取插字符号所在位置的文字，重复使用这个快捷键，可以快速地依序重复选取档案里相同的文字，如果想要跳过目前选取的文字，可以使用 <kbd>Command</kbd> + <kbd>K</kbd> + <kbd>Command</kbd> + <kbd>D</kbd>，复原选取动作则用快捷键 <kbd>Command</kbd> + <kbd>U</kbd>。</p>
+
+<p>也可以用快捷键 <kbd>Control</kbd> + <kbd>Shift</kbd> + 上下方向键，进行多重选取的操作。</p>
+
+<h2 id="toc_1"><span id="join-lines">合并多行</span></h2>
+
+<p><img alt="sublime-join-lines" src="images/sublime-join-lines.gif" /></p>
+
+<p>假设有一个 array 在档案里这样写：</p>
+<div class="highlight"><pre><span class="o">[</span>
+  <span class="s2">&quot;Facebook&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;Google&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;Twitter&quot;</span>
+<span class="o">]</span>
+</pre></div>
+<p>想要把它合并到同一行，除了可以透过<a href="http://docs.sublimetext.tw/multiple-selections">多重选取</a>功能快速地做到，其实还可以用合并多行（join lines）这个功能，会更方便。先将这个阵列整个选取起来，然后按下快捷键 <kbd>Command</kbd> + <kbd>j</kbd>，就会变成：</p>
+<div class="highlight"><pre><span class="o">[</span><span class="s2">&quot;Facebook&quot;</span><span class="p">,</span> <span class="s2">&quot;Google&quot;</span><span class="p">,</span> <span class="s2">&quot;Twitter&quot;</span><span class="o">]</span>
+</pre></div>
+<h2 id="toc_2"><span id="swap-case">转换大小写</span></h2>
+
+<p><img alt="sublime-swap-case" src="images/sublime-swap-case.gif" /></p>
+
+<p><kbd>Command</kbd><kbd>k</kbd> + <kbd>Command</kbd><kbd>u</kbd>：转换文字为大写；</p>
+
+<p><kbd>Command</kbd><kbd>k</kbd> + <kbd>Command</kbd><kbd>l</kbd>：转换文字为小写；</p>
+
+<p>将单字的字首转成大写，预设没有快捷键，你可以从<a href="file-management-and-command-palette#command-palette">指令面板</a>呼叫它，或是<a href="customization#key-bindings">自己设定快捷键</a>，例如加上这一行，可以用 <kbd>Command</kbd><kbd>k</kbd> + <kbd>Command</kbd><kbd>t</kbd> 呼叫它：</p>
+
+<p><code>json [     { &quot;keys&quot;: [&quot;super+k&quot;, &quot;super+t&quot;], &quot;command&quot;: &quot;title_case&quot; } ]</code></p>
+
+<h2 id="toc_3"><span id="ruler">尺规</span></h2>
+
+<p>尺规会显示一条参考线，用来限制单行显示的字元数量，有的人认为这样有助于程式码的阅读。</p>
+
+<p>你可以从选单栏 <em>View</em> &gt;&gt; <em>Ruler</em> 去选择要断行的字数，这样编辑器上就会显示一条参考线。</p>
+
+<p>也可以从<a href="customization#settings">偏好设定</a>里加上自定的数值，或是显示多条参考线，例如：</p>
+<div class="highlight"><pre><span class="p">[</span>
+    <span class="s2">&quot;rulers&quot;</span><span class="err">:</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span> <span class="mi">130</span><span class="p">]</span>
+<span class="p">]</span>
+</pre></div>
+<h2 id="toc_4"><span id="comment">注解</span></h2>
+
+<p>可以选择多行，或是插字符号所在位置，然后用快捷键 <kbd>Command</kbd> + <kbd>/</kbd> 将选择的栏位注解起来。</p>
+
+<p>如果你的使用程式语言有所谓的区块注解（block comment），且语法定义里也有定义，可以用快捷键 <kbd>Command</kbd> + <kbd>alt</kbd> + <kbd>/</kbd> 来使用区块注解。</p>
+
+<h2 id="toc_5"><span id="code-folding">程式码折叠</span></h2>
+
+<h2 id="toc_6"><span id="mark">标记</span></h2>
+
+<h2 id="toc_7"><span id="more">更多用法</span></h2>
+
+            </div>
+          </article>
+        </div>
+      </div><!-- end .row -->
+    </div><!-- end .container -->
+    <!-- end container -->
+
+    <footer id="footer">
+      <div class="container">
+        <p class="pull-left">
+          &copy; 2013 <a href="http://blog.chh.tw/about" target="_blank">CHH</a>.
+        </p>
+        <p class="pull-right">
+          <a href="https://github.com/chinghanho/sublimetext-docs">帮忙编辑此手册</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

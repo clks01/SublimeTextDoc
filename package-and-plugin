@@ -1,0 +1,267 @@
+<!--
+   _____       __    ___                   ______          __     ___
+  / ___/__  __/ /_  / (_)___ ___  ___     /_  __/__  _  __/ /_   |__ \
+  \__ \/ / / / __ \/ / / __ `__ \/ _ \     / / / _ \| |/_/ __/   __/ /
+ ___/ / /_/ / /_/ / / / / / / / /  __/    / / /  __/>  </ /_    / __/
+/____/\__,_/_.___/_/_/_/ /_/ /_/\___/    /_/  \___/_/|_|\__/   /____/
+ -->
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Package 和 Plugin</title>
+
+    <!-- Facebook Insights -->
+    <meta property="fb:admins" content="100003742510626" />
+
+    <!-- Combine multiple fonts into one request -->
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic|Patua+One|Yanone+Kaffeesatz" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <link href="stylesheets/all.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="javascripts/all.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-16561083-20']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </head>
+
+  <body class="package-and-plugin package-and-plugin_index">
+    <header class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <hgroup>
+            <a href="index.html" class="brand"><h1>Sublime Text 手册</h1></a>
+          </hgroup>
+          <!-- end hgroup -->
+        </div><!-- end .container -->
+      </div><!-- end .navbar-innder -->
+    </header>
+    <!-- end header -->
+
+    <div class="container" id="main">
+      <div class="row">
+        <div class="span4"><nav><ul>
+<li><a href="preface">前言</a>
+
+<ul>
+<li><a href="preface#about-guides">关于这本手册</a>
+
+<ul>
+<li><a href="preface#what-is-sublime-text">什么是 Sublime Text？</a></li>
+<li><a href="preface#conventions-in-this-guide">这本手册的惯例</a></li>
+</ul></li>
+<li><a href="preface#what-this-guides-teach">这本手册会教你什么</a></li>
+</ul></li>
+<li><a href="installation">安装</a>
+
+<ul>
+<li><a href="installation#bits-or-64-bits">32 位元或 64 位元？</a>
+
+<ul>
+<li><a href="installation#windows">Windows</a></li>
+<li><a href="installation#osx">OS X</a></li>
+<li><a href="installation#linux">Linux</a></li>
+</ul></li>
+<li><a href="installation#for-developers">开发者版本</a></li>
+</ul></li>
+<li><a href="basic-concepts">基本概观</a>
+
+<ul>
+<li><a href="basic-concepts#directories">目录结构</a>
+
+<ul>
+<li><a href="basic-concepts#data-directory">Data 目录</a></li>
+<li><a href="basic-concepts#package-directory">Packages 目录</a>
+
+<ul>
+<li><a href="basic-concepts#user-package">User package</a></li>
+<li><a href="basic-concepts#default-package">Default package</a></li>
+</ul></li>
+</ul></li>
+<li><a href="basic-concepts#python-console-and-python-api">Python 控制台与 Python API</a></li>
+<li><a href="basic-concepts#textmate-compatibility">TextMate 相容</a></li>
+<li><a href="basic-concepts#vi-emulation">Vi 模拟模式</a></li>
+</ul></li>
+<li><a href="file-management-and-command-palette">档案导览与指令面板</a>
+
+<ul>
+<li><a href="file-management-and-command-palette#goto-anything">传送门？（Goto Anthing）</a></li>
+<li><a href="file-management-and-command-palette#sidebar">侧边栏</a></li>
+<li><a href="file-management-and-command-palette#command-palette">指令面板（Command Palette）</a></li>
+<li><a href="file-management-and-command-palette#projects">項目（Project）</a></li>
+</ul></li>
+<li><a href="edit">编辑</a>
+
+<ul>
+<li><a href="edit#multiple-selections">多重选取</a></li>
+<li><a href="edit#join-lines">合并多行</a></li>
+<li><a href="edit#swap-case">转换大小写</a></li>
+<li><a href="edit#ruler">尺规</a></li>
+<li><a href="edit#comment">注解</a></li>
+<li>程式码折叠</li>
+<li>标记</li>
+<li>更多用法</li>
+</ul></li>
+<li><a href="find">搜寻</a>
+
+<ul>
+<li><a href="find#search-single-file">搜寻单一档案的内容</a>
+
+<ul>
+<li><a href="find#search-and-replace">搜寻替换</a></li>
+<li><a href="find#incremental-search">累加搜寻（Incremental Search）</a></li>
+</ul></li>
+<li><a href="find#search-multiple-files">搜寻項目内全部档案的内容</a>
+
+<ul>
+<li><a href="find#search-scope">搜寻范围</a></li>
+</ul></li>
+<li><a href="find#regex">正规表示式（Regular Expressions）</a></li>
+</ul></li>
+<li><a href="customization">客制化</a>
+
+<ul>
+<li><a href="customization#snippets">程式码片段（Snippets）</a></li>
+<li><a href="customization#macros">巨集（Macros）</a></li>
+<li><a href="customization#commands">指令（Commands）</a></li>
+<li><a href="customization#completions">自动补全</a></li>
+<li><a href="customization#settings">偏好设定（Settings）</a>
+
+<ul>
+<li><a href="customization#how-to-change-settings">如何修改偏好设定</a></li>
+<li><a href="customization#settings-type">设定档的区别</a></li>
+<li><a href="customization#order-of-precedence-of-sublime-settings-files">合并设定档的优先排序</a></li>
+<li><a href="customization#filetype-settings">档案类型的设定</a></li>
+</ul></li>
+<li><a href="customization#key-bindings">快捷键组合设定（Key Bindings）</a>
+
+<ul>
+<li><a href="customization#file-format">设定快捷键的语法格式</a></li>
+</ul></li>
+<li><a href="customization#plugin-settings-and-key-bindings">外挂的偏好设定与快捷键</a></li>
+</ul></li>
+<li><a href="package-and-plugin">Package 和 Plugin</a>
+
+<ul>
+<li><a href="package-and-plugin#package-control">Package Control</a></li>
+<li><a href="package-and-plugin#install-package-control">安装 Package Control</a>
+
+<ul>
+<li><a href="package-and-plugin#install-package">安装 Package</a></li>
+<li><a href="package-and-plugin#remove-package">移除 Package</a></li>
+</ul></li>
+</ul></li>
+<li><a href="others">其他</a>
+
+<ul>
+<li><a href="others#build-system">Build System</a></li>
+<li><a href="others#command-line">命令行工具（Command Line）</a></li>
+</ul></li>
+</ul>
+</nav></div>
+        <div class="span8">
+          <article>
+            <header>
+              <h1>Package 和 Plugin</h1>
+            </header>
+            <div class="entry">
+              <h2 id="toc_0"><span id="package">Package</span></h2>
+
+<p>Package 放在 <em>Packages/</em> 目录下，主要用来组织同类型功能的档案，通常一个典型的 package 里面会包含以下这些档案：</p>
+
+<ul>
+<li>建构系统（Build System）：<em>.sublime-build</em></li>
+<li>快捷键设定：<em>.sublime-keymap</em></li>
+<li>巨集：<em>.sublime-macro</em></li>
+<li>选单栏：<em>.sublime-menu</em></li>
+<li>外挂程式：<em>.py</em></li>
+<li>preferences：<em>.tmPreferences</em></li>
+<li>选项设定：<em>.sublime-settings</em></li>
+<li>语法定义：<em>.tmLanguage</em></li>
+<li>语法片段：<em>.sublime-snippet</em></li>
+<li>布景主题：<em>.sublime-theme</em></li>
+</ul>
+
+<!-- TODO: 不知道该怎么翻 .tmPreferences 这部份…… -->
+
+<p>有些 package 可能只是存放一些档案，提供资料给其他外挂或 Sublime Text 的核心功能，例如拼音检查就是使用 <em>PackagesLanguage - English</em> 这个 package 目录。</p>
+
+<h2 id="toc_1"><span id="plugin">Plugin</span></h2>
+
+<p>Sublime Text 2 的外挂可以用 Python 语言开发，如果你擅长使用 Python 便可以自行开发扩充 Sublime Text 的功能，让它变得更好用！外挂可以使用已经存在的<a href="customization#commands">指令</a>，或是建立自己的指令。</p>
+
+<p>你可以将别人写好的外挂，或是自己写的外挂脚本，放在以下这几个位置，都可以被 Sublime Text 读取到：</p>
+
+<ul>
+<li><em>Packages</em></li>
+<li><em>Packages/&lt;pkg</em>name&gt;/_</li>
+</ul>
+
+<p>因此如果将外挂放在非以上这些目录，或是更深入的目录内，就会无法被读取到，我建议都放在 <em>User/</em> 目录下比较好备份管理。</p>
+
+<p>更多外挂的参考资料：<a href="http://docs.sublimetext.info/en/latest/extensibility/plugins.html">Plugins</a></p>
+
+<h2 id="toc_2"><span id="package-control">什么是 Package Control</span></h2>
+
+<p><img alt="sublime-package-control" src="images/sublime-package-control.png" /></p>
+
+<p><a href="http://wbond.net/sublime_packages/package_control">Package Control</a> 不是内建功能，事实上它只是 Sublime Text 2 的一个 package，由 <a href="http://wbond.net/">Will Bond</a> 所开发。因为实在是太方便了所以几乎与 Sublime Text 2 紧密结合在一起，成为安装 Sublime Text 2 时第一个必装的 package。</p>
+
+<p>Package Control 是功能相当完整的 package manager，让搜寻、安装跟移除 Sublime Text  package 变得相当方便，协助自动更新外挂，也因此几乎所有的外挂开发者，都会将自己的作品提交到 Package Control 上。</p>
+
+<p>这个概念就像是用 Google Chrome 的 Chrome Web Store 安装扩充套件吧！</p>
+
+<h2 id="toc_3"><span id="install-package-control">安装 Package Control</span></h2>
+
+<p>还记得先前介绍过的 <a href="basic-concepts#python-console-and-python-api">Python 控制台</a>吗？快捷键 <kbd>Ctrl</kbd> + <kbd>`</kbd>，或是从选单栏选择 <em>View</em> &gt;&gt; <em>Show Console</em> 打开它，将以下程式码复制贴上到控制台中，然后按下输入：</p>
+<div class="highlight"><pre><span class="n">import</span> <span class="n">urllib2</span><span class="p">,</span><span class="n">os</span><span class="p">;</span> <span class="n">pf</span><span class="o">=</span><span class="err">&#39;</span><span class="n">Package</span> <span class="n">Control</span><span class="p">.</span><span class="n">sublime</span><span class="o">-</span><span class="n">package</span><span class="err">&#39;</span><span class="p">;</span> <span class="n">ipp</span><span class="o">=</span><span class="n">sublime</span><span class="p">.</span><span class="n">installed_packages_path</span><span class="p">();</span> <span class="n">os</span><span class="p">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">ipp</span><span class="p">)</span> <span class="k">if</span> <span class="n">not</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">exists</span><span class="p">(</span><span class="n">ipp</span><span class="p">)</span> <span class="k">else</span> <span class="n">None</span><span class="p">;</span> <span class="n">urllib2</span><span class="p">.</span><span class="n">install_opener</span><span class="p">(</span><span class="n">urllib2</span><span class="p">.</span><span class="n">build_opener</span><span class="p">(</span><span class="n">urllib2</span><span class="p">.</span><span class="n">ProxyHandler</span><span class="p">()));</span> <span class="n">open</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">ipp</span><span class="p">,</span><span class="n">pf</span><span class="p">),</span><span class="err">&#39;</span><span class="n">wb</span><span class="err">&#39;</span><span class="p">).</span><span class="n">write</span><span class="p">(</span><span class="n">urllib2</span><span class="p">.</span><span class="n">urlopen</span><span class="p">(</span><span class="err">&#39;</span><span class="n">http</span><span class="o">:</span><span class="c1">//sublime.wbond.net/&#39;+pf.replace(&#39; &#39;,&#39;%20&#39;)).read()); print(&#39;Please restart Sublime Text to finish installation&#39;)</span>
+</pre></div>
+<p>Package Control 将会开始安装，完成时可能需要重新启动 Sublime Text 2。</p>
+
+<h3 id="toc_4"><span id="install-package">安装 Package</span></h3>
+
+<p><img alt="install-package" src="images/sublime-package-control-install.gif" /></p>
+
+<p>用快捷键 <kbd>Command</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> 打开指令面板，输入「install package」找到正确指令后按下输入，便会列出 Package Control 上所有可安装的 packages，搜寻要安装的 package 按下输入即开始安装。</p>
+
+<h3 id="toc_5"><span id="remove-package">移除 Package</span></h3>
+
+<p>与<a href="http://docs.sublimetext.tw/package-control#remove-package">安装 Package</a> 方法相同，打开指令面板后输入「remove package」，会列出所有已安装的 packages，从这里选择需要删除的 package。</p>
+
+<p>注意一点，如果有相关的设定档放在 <em>Package/User/</em> 目录下，并不会自动被删除，这部份需要自己手动移除。</p>
+
+            </div>
+          </article>
+        </div>
+      </div><!-- end .row -->
+    </div><!-- end .container -->
+    <!-- end container -->
+
+    <footer id="footer">
+      <div class="container">
+        <p class="pull-left">
+          &copy; 2013 <a href="http://blog.chh.tw/about" target="_blank">CHH</a>.
+        </p>
+        <p class="pull-right">
+          <a href="https://github.com/chinghanho/sublimetext-docs">帮忙编辑此手册</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

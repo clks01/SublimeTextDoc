@@ -1,0 +1,290 @@
+<!--
+   _____       __    ___                   ______          __     ___
+  / ___/__  __/ /_  / (_)___ ___  ___     /_  __/__  _  __/ /_   |__ \
+  \__ \/ / / / __ \/ / / __ `__ \/ _ \     / / / _ \| |/_/ __/   __/ /
+ ___/ / /_/ / /_/ / / / / / / / /  __/    / / /  __/>  </ /_    / __/
+/____/\__,_/_.___/_/_/_/ /_/ /_/\___/    /_/  \___/_/|_|\__/   /____/
+ -->
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>搜寻</title>
+
+    <!-- Facebook Insights -->
+    <meta property="fb:admins" content="100003742510626" />
+
+    <!-- Combine multiple fonts into one request -->
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic|Patua+One|Yanone+Kaffeesatz" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <link href="stylesheets/all.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="javascripts/all.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-16561083-20']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </head>
+
+  <body class="find find_index">
+    <header class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <hgroup>
+            <a href="index.html" class="brand"><h1>Sublime Text 手册</h1></a>
+          </hgroup>
+          <!-- end hgroup -->
+        </div><!-- end .container -->
+      </div><!-- end .navbar-innder -->
+    </header>
+    <!-- end header -->
+
+    <div class="container" id="main">
+      <div class="row">
+        <div class="span4"><nav><ul>
+<li><a href="preface">前言</a>
+
+<ul>
+<li><a href="preface#about-guides">关于这本手册</a>
+
+<ul>
+<li><a href="preface#what-is-sublime-text">什么是 Sublime Text？</a></li>
+<li><a href="preface#conventions-in-this-guide">这本手册的惯例</a></li>
+</ul></li>
+<li><a href="preface#what-this-guides-teach">这本手册会教你什么</a></li>
+</ul></li>
+<li><a href="installation">安装</a>
+
+<ul>
+<li><a href="installation#bits-or-64-bits">32 位元或 64 位元？</a>
+
+<ul>
+<li><a href="installation#windows">Windows</a></li>
+<li><a href="installation#osx">OS X</a></li>
+<li><a href="installation#linux">Linux</a></li>
+</ul></li>
+<li><a href="installation#for-developers">开发者版本</a></li>
+</ul></li>
+<li><a href="basic-concepts">基本概观</a>
+
+<ul>
+<li><a href="basic-concepts#directories">目录结构</a>
+
+<ul>
+<li><a href="basic-concepts#data-directory">Data 目录</a></li>
+<li><a href="basic-concepts#package-directory">Packages 目录</a>
+
+<ul>
+<li><a href="basic-concepts#user-package">User package</a></li>
+<li><a href="basic-concepts#default-package">Default package</a></li>
+</ul></li>
+</ul></li>
+<li><a href="basic-concepts#python-console-and-python-api">Python 控制台与 Python API</a></li>
+<li><a href="basic-concepts#textmate-compatibility">TextMate 相容</a></li>
+<li><a href="basic-concepts#vi-emulation">Vi 模拟模式</a></li>
+</ul></li>
+<li><a href="file-management-and-command-palette">档案导览与指令面板</a>
+
+<ul>
+<li><a href="file-management-and-command-palette#goto-anything">传送门？（Goto Anthing）</a></li>
+<li><a href="file-management-and-command-palette#sidebar">侧边栏</a></li>
+<li><a href="file-management-and-command-palette#command-palette">指令面板（Command Palette）</a></li>
+<li><a href="file-management-and-command-palette#projects">項目（Project）</a></li>
+</ul></li>
+<li><a href="edit">编辑</a>
+
+<ul>
+<li><a href="edit#multiple-selections">多重选取</a></li>
+<li><a href="edit#join-lines">合并多行</a></li>
+<li><a href="edit#swap-case">转换大小写</a></li>
+<li><a href="edit#ruler">尺规</a></li>
+<li><a href="edit#comment">注解</a></li>
+<li>程式码折叠</li>
+<li>标记</li>
+<li>更多用法</li>
+</ul></li>
+<li><a href="find">搜寻</a>
+
+<ul>
+<li><a href="find#search-single-file">搜寻单一档案的内容</a>
+
+<ul>
+<li><a href="find#search-and-replace">搜寻替换</a></li>
+<li><a href="find#incremental-search">累加搜寻（Incremental Search）</a></li>
+</ul></li>
+<li><a href="find#search-multiple-files">搜寻項目内全部档案的内容</a>
+
+<ul>
+<li><a href="find#search-scope">搜寻范围</a></li>
+</ul></li>
+<li><a href="find#regex">正规表示式（Regular Expressions）</a></li>
+</ul></li>
+<li><a href="customization">客制化</a>
+
+<ul>
+<li><a href="customization#snippets">程式码片段（Snippets）</a></li>
+<li><a href="customization#macros">巨集（Macros）</a></li>
+<li><a href="customization#commands">指令（Commands）</a></li>
+<li><a href="customization#completions">自动补全</a></li>
+<li><a href="customization#settings">偏好设定（Settings）</a>
+
+<ul>
+<li><a href="customization#how-to-change-settings">如何修改偏好设定</a></li>
+<li><a href="customization#settings-type">设定档的区别</a></li>
+<li><a href="customization#order-of-precedence-of-sublime-settings-files">合并设定档的优先排序</a></li>
+<li><a href="customization#filetype-settings">档案类型的设定</a></li>
+</ul></li>
+<li><a href="customization#key-bindings">快捷键组合设定（Key Bindings）</a>
+
+<ul>
+<li><a href="customization#file-format">设定快捷键的语法格式</a></li>
+</ul></li>
+<li><a href="customization#plugin-settings-and-key-bindings">外挂的偏好设定与快捷键</a></li>
+</ul></li>
+<li><a href="package-and-plugin">Package 和 Plugin</a>
+
+<ul>
+<li><a href="package-and-plugin#package-control">Package Control</a></li>
+<li><a href="package-and-plugin#install-package-control">安装 Package Control</a>
+
+<ul>
+<li><a href="package-and-plugin#install-package">安装 Package</a></li>
+<li><a href="package-and-plugin#remove-package">移除 Package</a></li>
+</ul></li>
+</ul></li>
+<li><a href="others">其他</a>
+
+<ul>
+<li><a href="others#build-system">Build System</a></li>
+<li><a href="others#command-line">命令行工具（Command Line）</a></li>
+</ul></li>
+</ul>
+</nav></div>
+        <div class="span8">
+          <article>
+            <header>
+              <h1>搜寻</h1>
+            </header>
+            <div class="entry">
+              <h2 id="toc_0"><span id="search-single-file">搜寻单一档案的内容</span></h2>
+
+<p><img alt="sublimetext-search-in-single-file" src="images/sublimetext-search-in-single-file.png" /></p>
+
+<p>使用快捷键 <kbd>Command</kbd> + <kbd>F</kbd> 开启单一档案的搜寻面板，输入你要搜索的文字，重复按下 <kbd>Enter</kbd> 循环寻找下一个，或是 <kbd>Shift</kbd> + <kbd>Enter</kbd> 循环寻找上一个，也可以 <kbd>Alt</kbd> + <kbd>Enter</kbd> 全选所有符合寻找条件的文字。</p>
+
+<p>搜寻面板提供以下几个主要选项（括弧内的快捷键是 for Windows/Linux）：</p>
+
+<ul>
+<li><kbd>Command</kbd> + <kbd>Alt</kbd> + <kbd>R</kbd>（<kbd>Alt</kbd> + <kbd>R</kbd>）：启用/关闭正规表示式搜寻模式（Regular Expressions），进一步了解请参考<a href="find#regex">正规表示式</a>章节；</li>
+<li><kbd>Command</kbd> + <kbd>Alt</kbd> + <kbd>C</kbd>（<kbd>Alt</kbd> + <kbd>C</kbd>）：区分大小写（Case Sensitivity）；</li>
+<li><kbd>Command</kbd> + <kbd>Alt</kbd> + <kbd>W</kbd>（<kbd>Alt</kbd> + <kbd>W</kbd>）：完全符合（Whole Word）；</li>
+</ul>
+
+<p>此外，单一档案的搜寻面板还提供三个搜寻功能：</p>
+
+<ul>
+<li>反向选取（reverse direction）：从底下往上选取搜寻结果，其实就跟一般 <kbd>Shift</kbd> + <kbd>Enter</kbd> 是一样的效果；</li>
+<li>循环选取（wrap）：启用这个功能后，搜寻选取到最后一个结果，当继续按 <kbd>Enter</kbd> 会重新返回到第一个；</li>
+<li>只搜寻已选取的文字（in selection）：搜寻范围只在已选取的文字内容中，可配合<a href="edit#multiple-selections">多重选取功能</a>使用。</li>
+</ul>
+
+<blockquote>
+<p>在前面的章节曾经介绍过，Sublime Text 2 的 <a href="file-management-and-command-palette#goto-anything">Goto Anything</a> 还可以利用「#」符号进行档案内的模糊搜寻。</p>
+</blockquote>
+
+<h3 id="toc_1"><span id="search-and-replace">搜寻和取代</span></h3>
+
+<p>使用快捷键 <kbd>Command</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd> 开启单一档案的搜寻取代面板，按下 <kbd>Enter</kbd> 逐一寻找下一个符合比对的结果，然后用 <kbd>Command</kbd> + <kbd>Alt</kbd> + <kbd>E</kbd> 取代，或是用 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Enter</kbd> 将全部结果都替换掉。</p>
+
+<blockquote>
+<p>很多时候使用 Sublime Text 的<a href="edit#multiple-selections">多重选取功能</a>，可能会比搜寻取代来得更好用唷！:)</p>
+</blockquote>
+
+<h3 id="toc_2"><span id="incremental-search">累加搜寻（Incremental Search）</span></h3>
+
+<p>使用快捷键 <kbd>Command</kbd> + <kbd>I</kbd> 打开，这跟<a href="find#search-single-file">一般的搜寻面板</a>没有太大的差别，就……都是搜寻嘛！唯一不一样的地方就是当你按下 <kbd>Enter</kbd> 后搜寻面板就会关闭，你可以依照使用喜好来选择使用这两种搜寻面板。</p>
+
+<h2 id="toc_3"><span id="search-multiple-files">搜寻項目内全部档案的内容</span></h2>
+
+<p><img alt="sublime-text-find-all-files" src="images/sublime-text-find-all-files.png" /></p>
+
+<p>使用快捷键 <kbd>Command</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> 开启多档案的搜寻面板（括弧内的快捷键是 for Windows/Linux）：</p>
+
+<ul>
+<li><kbd>Command</kbd> + <kbd>Alt</kbd> + <kbd>R</kbd>（<kbd>Alt</kbd> + <kbd>R</kbd>）：启用/关闭正规表示式搜寻模式（Regular Expressions），进一步了解请参考<a href="find#regex">正规表示式</a>章节；</li>
+<li><kbd>Command</kbd> + <kbd>Alt</kbd> + <kbd>C</kbd>（<kbd>Alt</kbd> + <kbd>C</kbd>）：区分大小写（Case Sensitivity）；</li>
+<li><kbd>Command</kbd> + <kbd>Alt</kbd> + <kbd>W</kbd>（<kbd>Alt</kbd> + <kbd>W</kbd>）：完全符合（Whole Word）；</li>
+</ul>
+
+<p>此外还有两个功能选项：</p>
+
+<ul>
+<li>搜寻结果显示上下文（Show Context）：搜寻结果上下多显示两行内容方便判断；</li>
+<li>搜寻结果储存在缓冲区（Use Buffet）：这会另开一个新的分页显示搜寻结果；</li>
+</ul>
+
+<p>搜寻完以后要开启符合搜寻条件的该档案，可以用滑鼠双击搜寻结果，或是用快捷键 <kbd>F4</kbd>/<kbd>Shift</kbd> + <kbd>F4</kbd>   逐一浏览。</p>
+
+<h3 id="toc_4"><span id="search-scope">搜寻范围</span></h3>
+
+<p>多档搜寻可以设定只搜寻指定的文件夾路径、档案类型，或是排除他们，在 Where 栏位输入：</p>
+
+<ul>
+<li>使用 Unix-style 的路径表示法，例如：<em>../path/to/directories</em>，也可以输入绝对路径；</li>
+<li>排除特定的档案或目录，例如：<code>-*.txt</code> 或 <code>-/path/to/ignore/*</code>；</li>
+<li>只搜寻已开启的目录或档案：<code>&lt;open files&gt;</code>、<code>&lt;open files&gt;</code>；</li>
+</ul>
+
+<p>不同的条件可以用逗号（,）隔开。</p>
+
+<p>按下 Where 栏位右边的「...」按钮可以显示所有选项。</p>
+
+<h2 id="toc_5"><span id="regex">正规表示式（Regular Expressions）</span></h2>
+
+<p>什么是正规表示式？看<a href="http://zh.wikipedia.org/wiki/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E7%A4%BA%E5%BC%8F">维基百科</a>的解释：</p>
+
+<blockquote>
+<p>正规表示式使用单个字串来描述、匹配一系列符合某个句法规则的字串。在很多文字编辑器里，正则运算式通常被用来检索、替换那些符合某个模式的文字。</p>
+</blockquote>
+
+<p>Sublime Text 可以用正规表示式比对复杂的文字，将符合规则的文字找出来，这在搜寻结构较复杂的内容时会非常有用，所以你需要学习一些基本的正规表示式语法，但是这本手册不会教你怎么使用它（因为这玩意都可以<a href="http://shop.oreilly.com/product/9780596528126.do">出一本书</a>了！XD），你可以<a href="https://www.google.com/search?q=正规表示式">上网搜寻</a>更多学习资源。</p>
+
+<p>正规表示式看起来就像这样有点恶心的东西，但是他非常有用：</p>
+<div class="highlight"><pre><span class="p">(</span><span class="o">?:</span><span class="n">Sw</span><span class="o">|</span><span class="n">P</span><span class="p">)</span><span class="n">i</span><span class="p">(</span><span class="o">?:</span><span class="n">tch</span><span class="o">|</span><span class="n">s</span><span class="p">{</span><span class="mi">2</span><span class="p">})</span><span class="err">\</span><span class="n">s</span><span class="p">(</span><span class="o">?:</span><span class="n">it</span><span class="err">\</span><span class="n">s</span><span class="p">)</span><span class="o">?</span><span class="n">of</span><span class="p">{</span><span class="mi">2</span><span class="p">}</span><span class="o">!</span>
+</pre></div>
+<p>Sublime Text 2 使用的是 <a href="http://www.boost.org/doc/libs/1_47_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html">Perl 正规表示式</a>的语法。</p>
+
+            </div>
+          </article>
+        </div>
+      </div><!-- end .row -->
+    </div><!-- end .container -->
+    <!-- end container -->
+
+    <footer id="footer">
+      <div class="container">
+        <p class="pull-left">
+          &copy; 2013 <a href="http://blog.chh.tw/about" target="_blank">CHH</a>.
+        </p>
+        <p class="pull-right">
+          <a href="https://github.com/chinghanho/sublimetext-docs">帮忙编辑此手册</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,402 @@
+<!--
+   _____       __    ___                   ______          __     ___
+  / ___/__  __/ /_  / (_)___ ___  ___     /_  __/__  _  __/ /_   |__ \
+  \__ \/ / / / __ \/ / / __ `__ \/ _ \     / / / _ \| |/_/ __/   __/ /
+ ___/ / /_/ / /_/ / / / / / / / /  __/    / / /  __/>  </ /_    / __/
+/____/\__,_/_.___/_/_/_/ /_/ /_/\___/    /_/  \___/_/|_|\__/   /____/
+ -->
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>客制化</title>
+
+    <!-- Facebook Insights -->
+    <meta property="fb:admins" content="100003742510626" />
+
+    <!-- Combine multiple fonts into one request -->
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic|Patua+One|Yanone+Kaffeesatz" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <link href="stylesheets/all.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="javascripts/all.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-16561083-20']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </head>
+
+  <body class="customization customization_index">
+    <header class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <hgroup>
+            <a href="index.html" class="brand"><h1>Sublime Text 手册</h1></a>
+          </hgroup>
+          <!-- end hgroup -->
+        </div><!-- end .container -->
+      </div><!-- end .navbar-innder -->
+    </header>
+    <!-- end header -->
+
+    <div class="container" id="main">
+      <div class="row">
+        <div class="span4"><nav><ul>
+<li><a href="preface">前言</a>
+
+<ul>
+<li><a href="preface#about-guides">关于这本手册</a>
+
+<ul>
+<li><a href="preface#what-is-sublime-text">什么是 Sublime Text？</a></li>
+<li><a href="preface#conventions-in-this-guide">这本手册的惯例</a></li>
+</ul></li>
+<li><a href="preface#what-this-guides-teach">这本手册会教你什么</a></li>
+</ul></li>
+<li><a href="installation">安装</a>
+
+<ul>
+<li><a href="installation#bits-or-64-bits">32 位元或 64 位元？</a>
+
+<ul>
+<li><a href="installation#windows">Windows</a></li>
+<li><a href="installation#osx">OS X</a></li>
+<li><a href="installation#linux">Linux</a></li>
+</ul></li>
+<li><a href="installation#for-developers">开发者版本</a></li>
+</ul></li>
+<li><a href="basic-concepts">基本概观</a>
+
+<ul>
+<li><a href="basic-concepts#directories">目录结构</a>
+
+<ul>
+<li><a href="basic-concepts#data-directory">Data 目录</a></li>
+<li><a href="basic-concepts#package-directory">Packages 目录</a>
+
+<ul>
+<li><a href="basic-concepts#user-package">User package</a></li>
+<li><a href="basic-concepts#default-package">Default package</a></li>
+</ul></li>
+</ul></li>
+<li><a href="basic-concepts#python-console-and-python-api">Python 控制台与 Python API</a></li>
+<li><a href="basic-concepts#textmate-compatibility">TextMate 相容</a></li>
+<li><a href="basic-concepts#vi-emulation">Vi 模拟模式</a></li>
+</ul></li>
+<li><a href="file-management-and-command-palette">档案导览与指令面板</a>
+
+<ul>
+<li><a href="file-management-and-command-palette#goto-anything">传送门？（Goto Anthing）</a></li>
+<li><a href="file-management-and-command-palette#sidebar">侧边栏</a></li>
+<li><a href="file-management-and-command-palette#command-palette">指令面板（Command Palette）</a></li>
+<li><a href="file-management-and-command-palette#projects">項目（Project）</a></li>
+</ul></li>
+<li><a href="edit">编辑</a>
+
+<ul>
+<li><a href="edit#multiple-selections">多重选取</a></li>
+<li><a href="edit#join-lines">合并多行</a></li>
+<li><a href="edit#swap-case">转换大小写</a></li>
+<li><a href="edit#ruler">尺规</a></li>
+<li><a href="edit#comment">注解</a></li>
+<li>程式码折叠</li>
+<li>标记</li>
+<li>更多用法</li>
+</ul></li>
+<li><a href="find">搜寻</a>
+
+<ul>
+<li><a href="find#search-single-file">搜寻单一档案的内容</a>
+
+<ul>
+<li><a href="find#search-and-replace">搜寻替换</a></li>
+<li><a href="find#incremental-search">累加搜寻（Incremental Search）</a></li>
+</ul></li>
+<li><a href="find#search-multiple-files">搜寻項目内全部档案的内容</a>
+
+<ul>
+<li><a href="find#search-scope">搜寻范围</a></li>
+</ul></li>
+<li><a href="find#regex">正规表示式（Regular Expressions）</a></li>
+</ul></li>
+<li><a href="customization">客制化</a>
+
+<ul>
+<li><a href="customization#snippets">程式码片段（Snippets）</a></li>
+<li><a href="customization#macros">巨集（Macros）</a></li>
+<li><a href="customization#commands">指令（Commands）</a></li>
+<li><a href="customization#completions">自动补全</a></li>
+<li><a href="customization#settings">偏好设定（Settings）</a>
+
+<ul>
+<li><a href="customization#how-to-change-settings">如何修改偏好设定</a></li>
+<li><a href="customization#settings-type">设定档的区别</a></li>
+<li><a href="customization#order-of-precedence-of-sublime-settings-files">合并设定档的优先排序</a></li>
+<li><a href="customization#filetype-settings">档案类型的设定</a></li>
+</ul></li>
+<li><a href="customization#key-bindings">快捷键组合设定（Key Bindings）</a>
+
+<ul>
+<li><a href="customization#file-format">设定快捷键的语法格式</a></li>
+</ul></li>
+<li><a href="customization#plugin-settings-and-key-bindings">外挂的偏好设定与快捷键</a></li>
+</ul></li>
+<li><a href="package-and-plugin">Package 和 Plugin</a>
+
+<ul>
+<li><a href="package-and-plugin#package-control">Package Control</a></li>
+<li><a href="package-and-plugin#install-package-control">安装 Package Control</a>
+
+<ul>
+<li><a href="package-and-plugin#install-package">安装 Package</a></li>
+<li><a href="package-and-plugin#remove-package">移除 Package</a></li>
+</ul></li>
+</ul></li>
+<li><a href="others">其他</a>
+
+<ul>
+<li><a href="others#build-system">Build System</a></li>
+<li><a href="others#command-line">命令行工具（Command Line）</a></li>
+</ul></li>
+</ul>
+</nav></div>
+        <div class="span8">
+          <article>
+            <header>
+              <h1>客制化</h1>
+            </header>
+            <div class="entry">
+              <h2 id="toc_0"><span id="snippets">程式码片段（Snippets）</span></h2>
+
+<p>程式码片段将经常重复使用的程式码储存起来，可以让你只输入几个关键字，按下 Tab 自动完成其余的部份。</p>
+
+<p>Sublime Text 的程式码片段与 Textmate 完全相容，档案以 <em>.sublime-snippet</em>（XML 格式）为副档名，以下这是个范例：</p>
+<div class="highlight"><pre><span class="nt">&lt;snippet&gt;</span>
+    <span class="nt">&lt;content&gt;</span><span class="cp">&lt;![CDATA[def ${1:method_name}</span>
+<span class="cp">  $0</span>
+<span class="cp">end]]&gt;</span><span class="nt">&lt;/content&gt;</span>
+    <span class="nt">&lt;tabTrigger&gt;</span>def<span class="nt">&lt;/tabTrigger&gt;</span>
+    <span class="nt">&lt;scope&gt;</span>source.ruby<span class="nt">&lt;/scope&gt;</span>
+    <span class="nt">&lt;description&gt;</span>def … end<span class="nt">&lt;/description&gt;</span>
+<span class="nt">&lt;/snippet&gt;</span>
+</pre></div>
+<ul>
+<li><code>content</code>：程式码片段的内容；</li>
+<li><code>tabTrigger</code>：触发自动完成这段程式码的关键字；</li>
+<li><code>scope</code>：选择哪类的档案会触发这段程式码；</li>
+<li><code>description</code>：给人类阅读的友善描述；</li>
+</ul>
+
+<p><code>$1</code>、<code>$2</code>、<code>$3</code> 是按 <kbd>Tab</kbd> 自动移动的位置（<kbd>Shift</kbd> + <kbd>Tab</kbd> 回到上个位置），<code>${1:method_name}</code> 会选取这段文字（占位符的意思），<code>$0</code> 是 <kbd>Tab</kbd> 移动的最后一个位置。</p>
+
+<!-- TODO: 未翻译完整：http://docs.sublimetext.info/en/latest/reference/snippets.html -->
+
+<h2 id="toc_1"><span id="macros">巨集（Macros）</span></h2>
+
+<p>当你需要大量重复动作完成相同的作业，巨集是个简单的自动化工具可以帮你完成。Sublime Text 的巨集定义在 <em>.sublime-macro</em> 档案（JSON 格式）。</p>
+
+<p>使用快捷键 <kbd>Ctrl</kbd> + <kbd>Q</kbd> 开始记录，再按一次停止；刚刚记录的巨集不会储存成档案，只会暂时放在 buffer 里面，要执行刚刚的巨集可以使用快捷键 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Q</kbd>；如果要把刚刚的巨集储存成档案，可以从选单栏选取 <em>Tools</em> &gt;&gt; <em>Save Macro</em> 存到 <em>User/</em> 目录下。</p>
+
+<p>你也可以手建一份巨集档案，以下这是范例：</p>
+<div class="highlight"><pre><span class="p">[</span>
+    <span class="p">{</span><span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;move_to&quot;</span><span class="p">,</span> <span class="nt">&quot;args&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;to&quot;</span><span class="p">:</span> <span class="s2">&quot;hardeol&quot;</span><span class="p">}},</span>
+    <span class="p">{</span><span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;insert&quot;</span><span class="p">,</span> <span class="nt">&quot;args&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;characters&quot;</span><span class="p">:</span> <span class="s2">&quot;\n&quot;</span><span class="p">}}</span>
+<span class="p">]</span>
+</pre></div>
+<p><code>command</code> 部分请参考<a href="customization#commands">指令</a>。</p>
+
+<p>原则上巨集可以储存在任何 package 目录下，不过还是建议放在 <em>User/</em> 目录下，Sublime Text 会自动读取 <em>Packages/</em> 目录里所有的 <em>.sublime-macro</em> 档案，你可以在选单 <em>Tools</em> &gt;&gt; <em>Macros</em> 下找到先前储存过的巨集。</p>
+
+<h2 id="toc_2"><span id="commands">指令（Commands）</span></h2>
+
+<p>指令在 Sublime Text 中到处可见，快捷键设定、选单项目、巨集等等都会用到。有些指令是 Sublime Text 本身的核心功能，有些则是其他 Python 开发的外挂实作的。顺带一提，所有的指令都可以被 Python 外挂使用。</p>
+
+<p>指令名称命名规则是小写，不同单字以下画线分离，例如 <code>hot_exit</code>；你也可以传入参数给指令，参数一概是 JSON 类型，以下在 <a href="basic-concepts#python-console-and-python-api">Python 控制台</a>执行指令的范例：</p>
+<div class="highlight"><pre><span class="n">view</span><span class="o">.</span><span class="n">run_command</span><span class="p">(</span><span class="s">&quot;goto_line&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s">&quot;line&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">})</span>
+<span class="n">view</span><span class="o">.</span><span class="n">run_command</span><span class="p">(</span><span class="s">&#39;insert_snippet&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&quot;contents&quot;</span><span class="p">:</span> <span class="s">&quot;&lt;$SELECTION&gt;&quot;</span><span class="p">})</span>
+<span class="n">view</span><span class="o">.</span><span class="n">window</span><span class="p">()</span><span class="o">.</span><span class="n">run_command</span><span class="p">(</span><span class="s">&quot;prompt_select_project&quot;</span><span class="p">)</span>
+</pre></div>
+<p>Sublime Text 2 指令参考列表：<a href="http://docs.sublimetext.info/en/latest/reference/commands.html">Commands</a></p>
+
+<h2 id="toc_3"><span id="completions">自动补全</span></h2>
+
+<p>自动补全功能会根据 Sublime Text 的演算法，用 <kbd>Tab</kbd> 键快速补全最佳的单字，这个功能预设是启用的，你也可以在<a href="customization#settings">偏好设定</a>里将这个功能取消：</p>
+<div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;tab_completion&quot;</span><span class="p">:</span> <span class="n">false</span>
+<span class="p">}</span>
+</pre></div>
+<p>可以使用快捷键 <kbd>Ctrl</kbd> + <kbd>Space</kbd> 叫出自动补全选单，手动选择你要补全的字。你也能自己建立自动补全档案，以 JSON 格式储存在副档名为 <em>.sublime-completions</em> 的档案，以下是个基本范例：</p>
+<div class="highlight"><pre><span class="p">{</span>
+    <span class="nt">&quot;scope&quot;</span><span class="p">:</span> <span class="s2">&quot;text.html - source - meta.tag, punctuation.definition.tag.begin&quot;</span><span class="p">,</span>
+
+    <span class="nt">&quot;completions&quot;</span><span class="p">:</span>
+    <span class="p">[</span>
+        <span class="p">{</span> <span class="nt">&quot;trigger&quot;</span><span class="p">:</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="nt">&quot;contents&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;a href=\&quot;$1\&quot;&gt;$0&lt;/a&gt;&quot;</span> <span class="p">},</span>
+        <span class="p">{</span> <span class="nt">&quot;trigger&quot;</span><span class="p">:</span> <span class="s2">&quot;abbr&quot;</span><span class="p">,</span> <span class="nt">&quot;contents&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;abbr&gt;$0&lt;/abbr&gt;&quot;</span> <span class="p">},</span>
+        <span class="p">{</span> <span class="nt">&quot;trigger&quot;</span><span class="p">:</span> <span class="s2">&quot;acronym&quot;</span><span class="p">,</span> <span class="nt">&quot;contents&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;acronym&gt;$0&lt;/acronym&gt;&quot;</span> <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+<ul>
+<li><code>scope</code>：决定哪类档案会使用这份自动补全清单；</li>
+<li><code>completions</code>：自补补全的的阵列；</li>
+</ul>
+
+<!-- TODO: 未完成：http://docs.sublimetext.info/en/latest/reference/completions.html -->
+
+<h2 id="toc_4"><span id="settings">偏好设定（Settings）</span></h2>
+
+<p><img alt="sublime-settings-default" src="images/sublime-settings-default.png" /></p>
+
+<p>Sublime Text 2 的偏好设定都是用 JSON 格式储存在副档名为 <code>.sublime-settings</code> 的档案，不论是编辑器本身，或其他 package 的偏好设定，都是用这样的方式。这样看起来有点复杂，目的是为了更佳的客制化弹性。</p>
+
+<h3 id="toc_5"><span id="how-to-change-settings">如何修改偏好设定</span></h3>
+
+<p><img alt="sublime-default-settings" src="images/sublime-default-settings.png" /></p>
+
+<p>Sublime Text 2 预设的偏好设定放在 <em>Packages/Default/Preferences.sublime-settings</em>，你可以从选单 <em>Preferences &gt;&gt; Settings - Default</em> 打开它看看有哪些选项，每个选项旁边都有详细的注解，但是你不应该直接修改它，因为当软体升级时这些设定就会被重置。</p>
+
+<p>个人的偏好设定档都应该放在 <em>Packages/User/</em> 目录下，我们曾在<a href="basic-concepts#user-package">目录结构</a>章节介绍过，软体更新不会变更 <em>User/</em> 目录下的档案。</p>
+
+<p>你可以从选单 <em>Preferences</em> &gt;&gt; <em>Settings - User</em> 或是快捷键 <kbd>Command</kbd> + <kbd>,</kbd> 打开个人偏好设定的档案，如果先前从来没有建立过这份档案，那么 Sublime Text 2 会替你自动在 <em>Packages/User/</em> 目录下建立 <em>Preferences.sublime-settings</em>。</p>
+
+<h3 id="toc_6"><span id="settings-type">设定档的区别</span></h3>
+
+<p>不同设定档的用途以不同档案名称来区分，package 的设定档通常以自己的名称来命名。</p>
+
+<p>此外，档名也会关联到这些设定档控制的档案，举例来说：有个档案副档名是 <code>.py</code>，它的语法定义在一个叫 <em>Python.tmLanguage</em> 的档案里，那对应到的设定档就应该叫做 <em>Python.sublime-settings</em>。</p>
+
+<p>如果要指定该设定档在某平台上才会生效，可以在档名后加上括号，例如：<em>Preferences (Linux).sublime-settings</em>，括号内的有效值可以是 Windows、OSX 或 Linux。</p>
+
+<p>这些指定平台的设定档，在 <em>Packages/Users/</em> 目录下会被忽略，这是为了要确保只有一个设定档留到最后<a href="customization#order-of-precedence-of-sublime-settings-files">合并</a>。</p>
+
+<h3 id="toc_7"><span id="order-of-precedence-of-sublime-settings-files">合并设定档的优先排序</span></h3>
+
+<p>相同档名的设定档可能在不同位置会重复出现，Sublime Text 2 读取这些档案后先依照字母顺序排列，然后将他们合并，排在越后面的的设定档优先层级越高。</p>
+
+<p>除了两个文件夾比较特殊：<em>Packages/Default/</em> 与 <em>Packages/User/</em>，前者里的设定档将总是排在序列的第一个，后者则总是排在最后一个。</p>
+
+<p>让我再说明更清楚，<em>Packages/User/</em> 目录内的设定档，与其他相同名称的设定档相较，拥有更高的优先权，且不会随着软体更新而改变。</p>
+
+<p>除此之外，Sublime Text 2 会自动维护一个 session 档案（放在跟 <em>Packages/</em> 同级的 <em>Settings/</em> 目录下），用来储存你编辑档案时的任何动作跟设定，例如搜寻了哪些字或是调整侧边栏宽度，都会随时更新在这个档案里，而这个档案里的设定，优先权将比任何一个可用的 <code>.sublime-setting</code> 设定档都还要更高。</p>
+
+<p>最后需要知道的是，当你为某些设定值失效感到困惑时，这可能是因为某些设定依你的使用情况自己自动调整，例如与空格相关或语法的设定。</p>
+
+<p>以下你可以看到 Sublime Text 2 在 OS X 上是如何处理设定档的优先顺序：</p>
+
+<ul>
+<li><em>Packages/Default/Preferences.sublime-settings</em></li>
+<li><em>Packages/Default/Preferences (OSX).sublime-settings</em></li>
+<li><em>Packages/User/Preferences.sublime-settings</em></li>
+<li><em>Packages/Python/Python.sublime-settings</em></li>
+<li><em>Packages/User/Python.sublime-settings</em></li>
+<li>session 资料</li>
+<li>自动调整档案</li>
+</ul>
+
+<h3 id="toc_8"><span id="filetype-settings">档案类型的设定</span></h3>
+
+<p>如果想要让某档案类型，使用指定的语法定义（语法高亮），例如我想要让 Gemfile、Vagrantfile 和 Thorfile 这些档案，预设自动使用 Ruby 的语法定义，可以这么做：</p>
+
+<p>Ruby 的语法定义档案是 <em>Ruby.tmLanguage</em>，你需要建立一个相同名称的 <em>Ruby.sublime-settings</em> 设定档，放在 <em>User/</em> 目录下，然后档案加上以下内容：</p>
+<div class="highlight"><pre><span class="p">{</span>
+  <span class="nt">&quot;extensions&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;Gemfile&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Vagrantfile&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Thorfile&quot;</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+<p>完成之后，当你重新打开这些档案，就可以看到可以自动使用 Ruby 的语法高亮了。</p>
+
+<h2 id="toc_9"><span id="key-bindings">快捷键组合设定（Key Bindings）</span></h2>
+
+<p>Sublime Text 2 快捷键组合设定用 JSON 格式储存在副档名为 <code>.sublime-keymap</code> 的档案，为了与各个平台整合，每个平台都有各自对应的档案，也只有对应的平台才会读取该档案。命名规则是在档名后面加上括号：<em>Default (OSX).sublime-keymap</em>，有效值可以是 Windows、OSX 或 Linux。</p>
+
+<h3 id="toc_10"><span id="file-format">设定快捷键的语法格式</span></h3>
+
+<p>快捷键设定的语法主要是由 <code>keys</code> 跟 <code>command</code> 组成，<code>command</code> 部分请参考<a href="customization#commands">指令</a>。以下是典型的 OS X 快捷键设定例子：</p>
+<div class="highlight"><pre><span class="p">[</span>
+  <span class="p">{</span> <span class="nt">&quot;keys&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;super+shift+n&quot;</span><span class="p">],</span> <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;new_window&quot;</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nt">&quot;keys&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;super+o&quot;</span><span class="p">],</span> <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;prompt_open&quot;</span> <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+<p>当按下 <kbd>Command</kbd> + <kbd>O</kbd> 便会呼叫 <code>prompt_open</code> 这个命令。除此之外，也可以带参数传给命令：</p>
+<div class="highlight"><pre><span class="p">[</span>
+  <span class="p">{</span> <span class="nt">&quot;keys&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;shift+tab&quot;</span><span class="p">],</span> <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;insert&quot;</span><span class="p">,</span> <span class="nt">&quot;args&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;characters&quot;</span><span class="p">:</span> <span class="s2">&quot;\t&quot;</span><span class="p">}</span> <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+<p>当按下 <kbd>Shift</kbd> + <kbd>Tab</kbd> 时呼叫 <code>insert</code> 命令，并将参数 <code>\t</code> 传给它。</p>
+
+<p>还有一种进阶的写法，就是传入 <code>context</code> 给命令，快捷键会基于插字符号的前后关系或是其他情况而触发，或者是无效：</p>
+<div class="highlight"><pre><span class="p">{</span> <span class="nt">&quot;keys&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;escape&quot;</span><span class="p">],</span> <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;clear_fields&quot;</span><span class="p">,</span> <span class="nt">&quot;context&quot;</span><span class="p">:</span>
+  <span class="p">[</span>
+    <span class="p">{</span> <span class="nt">&quot;key&quot;</span><span class="p">:</span> <span class="s2">&quot;has_next_field&quot;</span><span class="p">,</span> <span class="nt">&quot;operator&quot;</span><span class="p">:</span> <span class="s2">&quot;equal&quot;</span><span class="p">,</span> <span class="nt">&quot;operand&quot;</span><span class="p">:</span> <span class="kc">true</span> <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+<h3 id="toc_11"><span id="defining-and-overriding-key-bindings">新增与修改快捷键设定</span></h3>
+
+<p>Sublime Text 2 预设的快捷键设定档放在 <em>Packages/Default/Default (OSX).sublime-keymap</em>，也可从选单 <em>Preferences</em> &gt;&gt; <em>Key Bindings - Default</em> 打开这个档案。你可以依照个人的喜好，或者有些快捷键冲突无法使用，需要修改快捷键的设定，那么你可以参考这份档案的设定，将快捷键修改成你想要的按键。</p>
+
+<p>就如同<a href="customization#how-to-change-settings">偏好设定</a>的档案一样，你应该在 <em>Packages/User/</em> 目录下另建一个 <em>Default (OSX).sublime-keymap</em>，而不是直接修改 <em>Default/</em> 目录下的东西。</p>
+
+<p>快捷键设定档的合并方式与偏好设定一样，合并前的排序方式也几乎相同，进一步了解请参考<a href="customization#order-of-precedence-of-sublime-settings-files">合并设定档的优先排序</a>。</p>
+
+<h2 id="toc_12"><span id="plugin-settings-and-key-bindings">外挂的偏好设定与快捷键</span></h2>
+
+<p>以 <a href="https://github.com/titoBouzout/SideBarEnhancements">SideBarEnhancements</a> 这个外挂来举例，打开这个 package 可以找到以下这几种档案类型：<em>.sublime-commands</em>、<em>.sublime-keymap</em>、<em>.sublime-settings</em>，他们分别的作用是：</p>
+
+<ul>
+<li><em>Commands.sublime-commands</em>：在<a href="file-management-and-command-palette#command-palette">指令面板章节</a>曾经介绍过，Sublime Text 2 会读取所有 <em>.sublime-commands</em> 档案，然后列在指令面板中，你可以在这里找到可以用的指令；</li>
+<li><em>Default.sublime-keymap</em>：这是外挂预设的快捷键配置，很有可能会跟你原本的一些快捷键冲突，因此需要自己把冲突的快捷键改掉；</li>
+<li><em>Side Bar.sublime-settings</em>：这是给外挂用的偏好设定，你可以参考这里的设定，在 <em>Packages/User/</em> 目录下新建一个 <em>Side Bar.sublime-settings</em> 来覆蓋原本的。</li>
+</ul>
+
+<p>当我们打开 <em>Commands.sublime-commands</em> 可以看到以下的指令：</p>
+<div class="highlight"><pre><span class="p">[</span>
+  <span class="p">{</span> <span class="nt">&quot;caption&quot;</span><span class="p">:</span> <span class="s2">&quot;File: Rename&quot;</span><span class="p">,</span>    <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;side_bar_rename&quot;</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nt">&quot;caption&quot;</span><span class="p">:</span> <span class="s2">&quot;File: Duplicate&quot;</span><span class="p">,</span> <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;side_bar_duplicate&quot;</span> <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+<p>现在想替外挂的 <code>side_bar_rename</code> 指令加上快捷键来使用，所以我们从选单栏点选 <em>Preferences</em> &gt;&gt; <em>Key Bindings - User</em>，打开 <em>Default (OSX).sublime-keymap</em>（位在 <em>Packages/User/</em> 下）加上：</p>
+<div class="highlight"><pre><span class="p">[</span>
+  <span class="p">{</span> <span class="nt">&quot;keys&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;f2&quot;</span><span class="p">],</span> <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;side_bar_rename&quot;</span> <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+<p>以后直接按 <kbd>F2</kbd> 便可以重新命名档案名称了！Done！</p>
+
+            </div>
+          </article>
+        </div>
+      </div><!-- end .row -->
+    </div><!-- end .container -->
+    <!-- end container -->
+
+    <footer id="footer">
+      <div class="container">
+        <p class="pull-left">
+          &copy; 2013 <a href="http://blog.chh.tw/about" target="_blank">CHH</a>.
+        </p>
+        <p class="pull-right">
+          <a href="https://github.com/chinghanho/sublimetext-docs">帮忙编辑此手册</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
