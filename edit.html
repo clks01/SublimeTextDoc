@@ -15,7 +15,7 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Sublime Text 手册</title>
+    <title>编辑</title>
 
     <!-- Facebook Insights -->
     <meta property="fb:admins" content="100003742510626" />
@@ -41,7 +41,7 @@
     </script>
   </head>
 
-  <body class="index">
+  <body class="edit edit_index">
     <header class="navbar navbar-static-top">
       <div class="navbar-inner">
         <div class="container">
@@ -178,30 +178,65 @@
         <div class="span8">
           <article>
             <header>
-              <h1>Sublime Text 手册</h1>
+              <h1>编辑</h1>
             </header>
             <div class="entry">
-              <p><img alt="sublime-text-cover" src="images/sublime-text-cover.png" /></p>
+              <h2 id="toc_0"><span id="multiple-selections">多重选取</span></h2>
 
-<h2 id="toc_0">关于 Sublime Text 台湾</h2>
+<p>通常每个文字编辑器都会有个搜寻（find）、替换（replace）的功能，用来一次更换档案里重复的文字，包括 Sublime Text 2 也有，但是在某些情况多重选取功能可以更有效率地修改文字。</p>
 
-<p>「Sublime Text 台湾」是由爱好者自行成立与维护的网站，目的在于分享各种 Sublime Text 文字编辑器的使用技巧，以及相关的新闻消息，推广好用的开发软体一起增进<del>宅指数</del>生产力！</p>
+<p>使用快捷键 <kbd>Command</kbd> + <kbd>D</kbd> 选取插字符号所在位置的文字，重复使用这个快捷键，可以快速地依序重复选取档案里相同的文字，如果想要跳过目前选取的文字，可以使用 <kbd>Command</kbd> + <kbd>K</kbd> + <kbd>Command</kbd> + <kbd>D</kbd>，复原选取动作则用快捷键 <kbd>Command</kbd> + <kbd>U</kbd>。</p>
 
-<h2 id="toc_1">社群资讯流</h2>
+<p>也可以用快捷键 <kbd>Control</kbd> + <kbd>Shift</kbd> + 上下方向键，进行多重选取的操作。</p>
 
-<p>现在即便是 geek 也很多人开始不用 RSS 了（而且 Google Reader 都……），所以「Sublime Text 台湾」建立了多个社群平台的资讯流，你可以依照自己的喜好选择不同的管道订阅本站的内容，随时接收最新的讯息：</p>
+<h2 id="toc_1"><span id="join-lines">合并多行</span></h2>
 
-<ul>
-<li><a href="https://www.facebook.com/SublimeTextTW">Facebook 粉丝专页</a></li>
-<li><a href="https://plus.google.com/108388957557258766656/posts">Google+ 专页</a></li>
-<li><a href="https://twitter.com/SublimeText_TW">Twitter 帐号</a></li>
-</ul>
+<p><img alt="sublime-join-lines" src="images/sublime-join-lines.gif" /></p>
 
-<p>部落格 Coming Soon！！！</p>
+<p>假设有一个 array 在档案里这样写：</p>
+<div class="highlight"><pre><span class="o">[</span>
+  <span class="s2">&quot;Facebook&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;Google&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;Twitter&quot;</span>
+<span class="o">]</span>
+</pre></div>
+<p>想要把它合并到同一行，除了可以透过<a href="http://docs.sublimetext.tw/multiple-selections">多重选取</a>功能快速地做到，其实还可以用合并多行（join lines）这个功能，会更方便。先将这个阵列整个选取起来，然后按下快捷键 <kbd>Command</kbd> + <kbd>j</kbd>，就会变成：</p>
+<div class="highlight"><pre><span class="o">[</span><span class="s2">&quot;Facebook&quot;</span><span class="p">,</span> <span class="s2">&quot;Google&quot;</span><span class="p">,</span> <span class="s2">&quot;Twitter&quot;</span><span class="o">]</span>
+</pre></div>
+<h2 id="toc_2"><span id="swap-case">转换大小写</span></h2>
 
-<h2 id="toc_2">问题回报与建议</h2>
+<p><img alt="sublime-swap-case" src="images/sublime-swap-case.gif" /></p>
 
-<p>如果对于「Sublime Text 台湾」有想说的话、各种建议，或者是疑问等等，欢迎用以上任何一个社群平台留言，或是传送私讯都可以，只要是我知道的都会尽量答复，可是在这之前你可以先上网搜寻，如果是外挂的问题请向外挂的作者询问。XD</p>
+<p><kbd>Command</kbd><kbd>k</kbd> + <kbd>Command</kbd><kbd>u</kbd>：转换文字为大写；</p>
+
+<p><kbd>Command</kbd><kbd>k</kbd> + <kbd>Command</kbd><kbd>l</kbd>：转换文字为小写；</p>
+
+<p>将单字的字首转成大写，预设没有快捷键，你可以从<a href="file-management-and-command-palette.html#command-palette">指令面板</a>呼叫它，或是<a href="customization.html#key-bindings">自己设定快捷键</a>，例如加上这一行，可以用 <kbd>Command</kbd><kbd>k</kbd> + <kbd>Command</kbd><kbd>t</kbd> 呼叫它：</p>
+
+<p><code>json [     { &quot;keys&quot;: [&quot;super+k&quot;, &quot;super+t&quot;], &quot;command&quot;: &quot;title_case&quot; } ]</code></p>
+
+<h2 id="toc_3"><span id="ruler">尺规</span></h2>
+
+<p>尺规会显示一条参考线，用来限制单行显示的字元数量，有的人认为这样有助于程式码的阅读。</p>
+
+<p>你可以从选单栏 <em>View</em> &gt;&gt; <em>Ruler</em> 去选择要断行的字数，这样编辑器上就会显示一条参考线。</p>
+
+<p>也可以从<a href="customization.html#settings">偏好设定</a>里加上自定的数值，或是显示多条参考线，例如：</p>
+<div class="highlight"><pre><span class="p">[</span>
+    <span class="s2">&quot;rulers&quot;</span><span class="err">:</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span> <span class="mi">130</span><span class="p">]</span>
+<span class="p">]</span>
+</pre></div>
+<h2 id="toc_4"><span id="comment">注解</span></h2>
+
+<p>可以选择多行，或是插字符号所在位置，然后用快捷键 <kbd>Command</kbd> + <kbd>/</kbd> 将选择的栏位注解起来。</p>
+
+<p>如果你的使用程式语言有所谓的区块注解（block comment），且语法定义里也有定义，可以用快捷键 <kbd>Command</kbd> + <kbd>alt</kbd> + <kbd>/</kbd> 来使用区块注解。</p>
+
+<h2 id="toc_5"><span id="code-folding">程式码折叠</span></h2>
+
+<h2 id="toc_6"><span id="mark">标记</span></h2>
+
+<h2 id="toc_7"><span id="more">更多用法</span></h2>
 
             </div>
           </article>

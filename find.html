@@ -15,7 +15,7 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Sublime Text 手册</title>
+    <title>搜寻</title>
 
     <!-- Facebook Insights -->
     <meta property="fb:admins" content="100003742510626" />
@@ -41,7 +41,7 @@
     </script>
   </head>
 
-  <body class="index">
+  <body class="find find_index">
     <header class="navbar navbar-static-top">
       <div class="navbar-inner">
         <div class="container">
@@ -178,30 +178,96 @@
         <div class="span8">
           <article>
             <header>
-              <h1>Sublime Text 手册</h1>
+              <h1>搜寻</h1>
             </header>
             <div class="entry">
-              <p><img alt="sublime-text-cover" src="images/sublime-text-cover.png" /></p>
+              <h2 id="toc_0"><span id="search-single-file">搜寻单一档案的内容</span></h2>
 
-<h2 id="toc_0">关于 Sublime Text 台湾</h2>
+<p><img alt="sublimetext-search-in-single-file" src="images/sublimetext-search-in-single-file.png" /></p>
 
-<p>「Sublime Text 台湾」是由爱好者自行成立与维护的网站，目的在于分享各种 Sublime Text 文字编辑器的使用技巧，以及相关的新闻消息，推广好用的开发软体一起增进<del>宅指数</del>生产力！</p>
+<p>使用快捷键 <kbd>Command</kbd> + <kbd>F</kbd> 开启单一档案的搜寻面板，输入你要搜索的文字，重复按下 <kbd>Enter</kbd> 循环寻找下一个，或是 <kbd>Shift</kbd> + <kbd>Enter</kbd> 循环寻找上一个，也可以 <kbd>Alt</kbd> + <kbd>Enter</kbd> 全选所有符合寻找条件的文字。</p>
 
-<h2 id="toc_1">社群资讯流</h2>
-
-<p>现在即便是 geek 也很多人开始不用 RSS 了（而且 Google Reader 都……），所以「Sublime Text 台湾」建立了多个社群平台的资讯流，你可以依照自己的喜好选择不同的管道订阅本站的内容，随时接收最新的讯息：</p>
+<p>搜寻面板提供以下几个主要选项（括弧内的快捷键是 for Windows/Linux）：</p>
 
 <ul>
-<li><a href="https://www.facebook.com/SublimeTextTW">Facebook 粉丝专页</a></li>
-<li><a href="https://plus.google.com/108388957557258766656/posts">Google+ 专页</a></li>
-<li><a href="https://twitter.com/SublimeText_TW">Twitter 帐号</a></li>
+<li><kbd>Command</kbd> + <kbd>Alt</kbd> + <kbd>R</kbd>（<kbd>Alt</kbd> + <kbd>R</kbd>）：启用/关闭正规表示式搜寻模式（Regular Expressions），进一步了解请参考<a href="find.html#regex">正规表示式</a>章节；</li>
+<li><kbd>Command</kbd> + <kbd>Alt</kbd> + <kbd>C</kbd>（<kbd>Alt</kbd> + <kbd>C</kbd>）：区分大小写（Case Sensitivity）；</li>
+<li><kbd>Command</kbd> + <kbd>Alt</kbd> + <kbd>W</kbd>（<kbd>Alt</kbd> + <kbd>W</kbd>）：完全符合（Whole Word）；</li>
 </ul>
 
-<p>部落格 Coming Soon！！！</p>
+<p>此外，单一档案的搜寻面板还提供三个搜寻功能：</p>
 
-<h2 id="toc_2">问题回报与建议</h2>
+<ul>
+<li>反向选取（reverse direction）：从底下往上选取搜寻结果，其实就跟一般 <kbd>Shift</kbd> + <kbd>Enter</kbd> 是一样的效果；</li>
+<li>循环选取（wrap）：启用这个功能后，搜寻选取到最后一个结果，当继续按 <kbd>Enter</kbd> 会重新返回到第一个；</li>
+<li>只搜寻已选取的文字（in selection）：搜寻范围只在已选取的文字内容中，可配合<a href="edit.html#multiple-selections">多重选取功能</a>使用。</li>
+</ul>
 
-<p>如果对于「Sublime Text 台湾」有想说的话、各种建议，或者是疑问等等，欢迎用以上任何一个社群平台留言，或是传送私讯都可以，只要是我知道的都会尽量答复，可是在这之前你可以先上网搜寻，如果是外挂的问题请向外挂的作者询问。XD</p>
+<blockquote>
+<p>在前面的章节曾经介绍过，Sublime Text 2 的 <a href="file-management-and-command-palette.html#goto-anything">Goto Anything</a> 还可以利用「#」符号进行档案内的模糊搜寻。</p>
+</blockquote>
+
+<h3 id="toc_1"><span id="search-and-replace">搜寻和取代</span></h3>
+
+<p>使用快捷键 <kbd>Command</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd> 开启单一档案的搜寻取代面板，按下 <kbd>Enter</kbd> 逐一寻找下一个符合比对的结果，然后用 <kbd>Command</kbd> + <kbd>Alt</kbd> + <kbd>E</kbd> 取代，或是用 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Enter</kbd> 将全部结果都替换掉。</p>
+
+<blockquote>
+<p>很多时候使用 Sublime Text 的<a href="edit.html#multiple-selections">多重选取功能</a>，可能会比搜寻取代来得更好用唷！:)</p>
+</blockquote>
+
+<h3 id="toc_2"><span id="incremental-search">累加搜寻（Incremental Search）</span></h3>
+
+<p>使用快捷键 <kbd>Command</kbd> + <kbd>I</kbd> 打开，这跟<a href="find.html#search-single-file">一般的搜寻面板</a>没有太大的差别，就……都是搜寻嘛！唯一不一样的地方就是当你按下 <kbd>Enter</kbd> 后搜寻面板就会关闭，你可以依照使用喜好来选择使用这两种搜寻面板。</p>
+
+<h2 id="toc_3"><span id="search-multiple-files">搜寻項目内全部档案的内容</span></h2>
+
+<p><img alt="sublime-text-find-all-files" src="images/sublime-text-find-all-files.png" /></p>
+
+<p>使用快捷键 <kbd>Command</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> 开启多档案的搜寻面板（括弧内的快捷键是 for Windows/Linux）：</p>
+
+<ul>
+<li><kbd>Command</kbd> + <kbd>Alt</kbd> + <kbd>R</kbd>（<kbd>Alt</kbd> + <kbd>R</kbd>）：启用/关闭正规表示式搜寻模式（Regular Expressions），进一步了解请参考<a href="find.html#regex">正规表示式</a>章节；</li>
+<li><kbd>Command</kbd> + <kbd>Alt</kbd> + <kbd>C</kbd>（<kbd>Alt</kbd> + <kbd>C</kbd>）：区分大小写（Case Sensitivity）；</li>
+<li><kbd>Command</kbd> + <kbd>Alt</kbd> + <kbd>W</kbd>（<kbd>Alt</kbd> + <kbd>W</kbd>）：完全符合（Whole Word）；</li>
+</ul>
+
+<p>此外还有两个功能选项：</p>
+
+<ul>
+<li>搜寻结果显示上下文（Show Context）：搜寻结果上下多显示两行内容方便判断；</li>
+<li>搜寻结果储存在缓冲区（Use Buffet）：这会另开一个新的分页显示搜寻结果；</li>
+</ul>
+
+<p>搜寻完以后要开启符合搜寻条件的该档案，可以用滑鼠双击搜寻结果，或是用快捷键 <kbd>F4</kbd>/<kbd>Shift</kbd> + <kbd>F4</kbd>   逐一浏览。</p>
+
+<h3 id="toc_4"><span id="search-scope">搜寻范围</span></h3>
+
+<p>多档搜寻可以设定只搜寻指定的文件夾路径、档案类型，或是排除他们，在 Where 栏位输入：</p>
+
+<ul>
+<li>使用 Unix-style 的路径表示法，例如：<em>../path/to/directories</em>，也可以输入绝对路径；</li>
+<li>排除特定的档案或目录，例如：<code>-*.txt</code> 或 <code>-/path/to/ignore/*</code>；</li>
+<li>只搜寻已开启的目录或档案：<code>&lt;open files&gt;</code>、<code>&lt;open files&gt;</code>；</li>
+</ul>
+
+<p>不同的条件可以用逗号（,）隔开。</p>
+
+<p>按下 Where 栏位右边的「...」按钮可以显示所有选项。</p>
+
+<h2 id="toc_5"><span id="regex">正规表示式（Regular Expressions）</span></h2>
+
+<p>什么是正规表示式？看<a href="http://zh.wikipedia.org/wiki/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E7%A4%BA%E5%BC%8F">维基百科</a>的解释：</p>
+
+<blockquote>
+<p>正规表示式使用单个字串来描述、匹配一系列符合某个句法规则的字串。在很多文字编辑器里，正则运算式通常被用来检索、替换那些符合某个模式的文字。</p>
+</blockquote>
+
+<p>Sublime Text 可以用正规表示式比对复杂的文字，将符合规则的文字找出来，这在搜寻结构较复杂的内容时会非常有用，所以你需要学习一些基本的正规表示式语法，但是这本手册不会教你怎么使用它（因为这玩意都可以<a href="http://shop.oreilly.com/product/9780596528126.do">出一本书</a>了！XD），你可以<a href="https://www.google.com/search?q=正规表示式">上网搜寻</a>更多学习资源。</p>
+
+<p>正规表示式看起来就像这样有点恶心的东西，但是他非常有用：</p>
+<div class="highlight"><pre><span class="p">(</span><span class="o">?:</span><span class="n">Sw</span><span class="o">|</span><span class="n">P</span><span class="p">)</span><span class="n">i</span><span class="p">(</span><span class="o">?:</span><span class="n">tch</span><span class="o">|</span><span class="n">s</span><span class="p">{</span><span class="mi">2</span><span class="p">})</span><span class="err">\</span><span class="n">s</span><span class="p">(</span><span class="o">?:</span><span class="n">it</span><span class="err">\</span><span class="n">s</span><span class="p">)</span><span class="o">?</span><span class="n">of</span><span class="p">{</span><span class="mi">2</span><span class="p">}</span><span class="o">!</span>
+</pre></div>
+<p>Sublime Text 2 使用的是 <a href="http://www.boost.org/doc/libs/1_47_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html">Perl 正规表示式</a>的语法。</p>
 
             </div>
           </article>

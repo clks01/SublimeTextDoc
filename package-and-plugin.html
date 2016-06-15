@@ -15,7 +15,7 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Sublime Text 手册</title>
+    <title>Package 和 Plugin</title>
 
     <!-- Facebook Insights -->
     <meta property="fb:admins" content="100003742510626" />
@@ -41,7 +41,7 @@
     </script>
   </head>
 
-  <body class="index">
+  <body class="package-and-plugin package-and-plugin_index">
     <header class="navbar navbar-static-top">
       <div class="navbar-inner">
         <div class="container">
@@ -178,30 +178,73 @@
         <div class="span8">
           <article>
             <header>
-              <h1>Sublime Text 手册</h1>
+              <h1>Package 和 Plugin</h1>
             </header>
             <div class="entry">
-              <p><img alt="sublime-text-cover" src="images/sublime-text-cover.png" /></p>
+              <h2 id="toc_0"><span id="package">Package</span></h2>
 
-<h2 id="toc_0">关于 Sublime Text 台湾</h2>
-
-<p>「Sublime Text 台湾」是由爱好者自行成立与维护的网站，目的在于分享各种 Sublime Text 文字编辑器的使用技巧，以及相关的新闻消息，推广好用的开发软体一起增进<del>宅指数</del>生产力！</p>
-
-<h2 id="toc_1">社群资讯流</h2>
-
-<p>现在即便是 geek 也很多人开始不用 RSS 了（而且 Google Reader 都……），所以「Sublime Text 台湾」建立了多个社群平台的资讯流，你可以依照自己的喜好选择不同的管道订阅本站的内容，随时接收最新的讯息：</p>
+<p>Package 放在 <em>Packages/</em> 目录下，主要用来组织同类型功能的档案，通常一个典型的 package 里面会包含以下这些档案：</p>
 
 <ul>
-<li><a href="https://www.facebook.com/SublimeTextTW">Facebook 粉丝专页</a></li>
-<li><a href="https://plus.google.com/108388957557258766656/posts">Google+ 专页</a></li>
-<li><a href="https://twitter.com/SublimeText_TW">Twitter 帐号</a></li>
+<li>建构系统（Build System）：<em>.sublime-build</em></li>
+<li>快捷键设定：<em>.sublime-keymap</em></li>
+<li>巨集：<em>.sublime-macro</em></li>
+<li>选单栏：<em>.sublime-menu</em></li>
+<li>外挂程式：<em>.py</em></li>
+<li>preferences：<em>.tmPreferences</em></li>
+<li>选项设定：<em>.sublime-settings</em></li>
+<li>语法定义：<em>.tmLanguage</em></li>
+<li>语法片段：<em>.sublime-snippet</em></li>
+<li>布景主题：<em>.sublime-theme</em></li>
 </ul>
 
-<p>部落格 Coming Soon！！！</p>
+<!-- TODO: 不知道该怎么翻 .tmPreferences 这部份…… -->
 
-<h2 id="toc_2">问题回报与建议</h2>
+<p>有些 package 可能只是存放一些档案，提供资料给其他外挂或 Sublime Text 的核心功能，例如拼音检查就是使用 <em>PackagesLanguage - English</em> 这个 package 目录。</p>
 
-<p>如果对于「Sublime Text 台湾」有想说的话、各种建议，或者是疑问等等，欢迎用以上任何一个社群平台留言，或是传送私讯都可以，只要是我知道的都会尽量答复，可是在这之前你可以先上网搜寻，如果是外挂的问题请向外挂的作者询问。XD</p>
+<h2 id="toc_1"><span id="plugin">Plugin</span></h2>
+
+<p>Sublime Text 2 的外挂可以用 Python 语言开发，如果你擅长使用 Python 便可以自行开发扩充 Sublime Text 的功能，让它变得更好用！外挂可以使用已经存在的<a href="customization.html#commands">指令</a>，或是建立自己的指令。</p>
+
+<p>你可以将别人写好的外挂，或是自己写的外挂脚本，放在以下这几个位置，都可以被 Sublime Text 读取到：</p>
+
+<ul>
+<li><em>Packages</em></li>
+<li><em>Packages/&lt;pkg</em>name&gt;/_</li>
+</ul>
+
+<p>因此如果将外挂放在非以上这些目录，或是更深入的目录内，就会无法被读取到，我建议都放在 <em>User/</em> 目录下比较好备份管理。</p>
+
+<p>更多外挂的参考资料：<a href="http://docs.sublimetext.info/en/latest/extensibility/plugins.html">Plugins</a></p>
+
+<h2 id="toc_2"><span id="package-control">什么是 Package Control</span></h2>
+
+<p><img alt="sublime-package-control" src="images/sublime-package-control.png" /></p>
+
+<p><a href="http://wbond.net/sublime_packages/package_control">Package Control</a> 不是内建功能，事实上它只是 Sublime Text 2 的一个 package，由 <a href="http://wbond.net/">Will Bond</a> 所开发。因为实在是太方便了所以几乎与 Sublime Text 2 紧密结合在一起，成为安装 Sublime Text 2 时第一个必装的 package。</p>
+
+<p>Package Control 是功能相当完整的 package manager，让搜寻、安装跟移除 Sublime Text  package 变得相当方便，协助自动更新外挂，也因此几乎所有的外挂开发者，都会将自己的作品提交到 Package Control 上。</p>
+
+<p>这个概念就像是用 Google Chrome 的 Chrome Web Store 安装扩充套件吧！</p>
+
+<h2 id="toc_3"><span id="install-package-control">安装 Package Control</span></h2>
+
+<p>还记得先前介绍过的 <a href="basic-concepts.html#python-console-and-python-api">Python 控制台</a>吗？快捷键 <kbd>Ctrl</kbd> + <kbd>`</kbd>，或是从选单栏选择 <em>View</em> &gt;&gt; <em>Show Console</em> 打开它，将以下程式码复制贴上到控制台中，然后按下输入：</p>
+<div class="highlight"><pre><span class="n">import</span> <span class="n">urllib2</span><span class="p">,</span><span class="n">os</span><span class="p">;</span> <span class="n">pf</span><span class="o">=</span><span class="err">&#39;</span><span class="n">Package</span> <span class="n">Control</span><span class="p">.</span><span class="n">sublime</span><span class="o">-</span><span class="n">package</span><span class="err">&#39;</span><span class="p">;</span> <span class="n">ipp</span><span class="o">=</span><span class="n">sublime</span><span class="p">.</span><span class="n">installed_packages_path</span><span class="p">();</span> <span class="n">os</span><span class="p">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">ipp</span><span class="p">)</span> <span class="k">if</span> <span class="n">not</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">exists</span><span class="p">(</span><span class="n">ipp</span><span class="p">)</span> <span class="k">else</span> <span class="n">None</span><span class="p">;</span> <span class="n">urllib2</span><span class="p">.</span><span class="n">install_opener</span><span class="p">(</span><span class="n">urllib2</span><span class="p">.</span><span class="n">build_opener</span><span class="p">(</span><span class="n">urllib2</span><span class="p">.</span><span class="n">ProxyHandler</span><span class="p">()));</span> <span class="n">open</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">ipp</span><span class="p">,</span><span class="n">pf</span><span class="p">),</span><span class="err">&#39;</span><span class="n">wb</span><span class="err">&#39;</span><span class="p">).</span><span class="n">write</span><span class="p">(</span><span class="n">urllib2</span><span class="p">.</span><span class="n">urlopen</span><span class="p">(</span><span class="err">&#39;</span><span class="n">http</span><span class="o">:</span><span class="c1">//sublime.wbond.net/&#39;+pf.replace(&#39; &#39;,&#39;%20&#39;)).read()); print(&#39;Please restart Sublime Text to finish installation&#39;)</span>
+</pre></div>
+<p>Package Control 将会开始安装，完成时可能需要重新启动 Sublime Text 2。</p>
+
+<h3 id="toc_4"><span id="install-package">安装 Package</span></h3>
+
+<p><img alt="install-package" src="images/sublime-package-control-install.gif" /></p>
+
+<p>用快捷键 <kbd>Command</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> 打开指令面板，输入「install package」找到正确指令后按下输入，便会列出 Package Control 上所有可安装的 packages，搜寻要安装的 package 按下输入即开始安装。</p>
+
+<h3 id="toc_5"><span id="remove-package">移除 Package</span></h3>
+
+<p>与<a href="http://docs.sublimetext.tw/package-control#remove-package">安装 Package</a> 方法相同，打开指令面板后输入「remove package」，会列出所有已安装的 packages，从这里选择需要删除的 package。</p>
+
+<p>注意一点，如果有相关的设定档放在 <em>Package/User/</em> 目录下，并不会自动被删除，这部份需要自己手动移除。</p>
 
             </div>
           </article>
